@@ -1,0 +1,443 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.logo {
+  color: #212121;
+  font-family: "Raleway", Times, serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 31px;
+}
+
+.logo span {
+  color: #2196f3;
+}
+
+.logo :link {
+  color: #212121;
+}
+
+.title {
+  color: #212121;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+  text-align: center;
+}
+
+.wrapper {
+  width: 1600px;
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 0 -800px;
+  position: absolute;
+  left: 50%;
+}
+
+body {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+.header__logo {
+  margin: 0px 92px 0px 15px;
+}
+
+.header__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__contacts {
+  display: inline-block;
+  margin: 0px 15px 0px 0px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+}
+
+.header__contacts :first-child:hover {
+  cursor: pointer;
+  color: #2196f3;
+}
+
+.main__nav {
+  margin: 0px 92px 0px 0px;
+}
+
+.main__menu {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__menu > *:not(:last-child) {
+  margin: 0px 50px 0px 0px;
+}
+
+.main__menu :first-child:hover {
+  cursor: pointer;
+  color: #2196f3;
+}
+
+.cotactes-tel {
+  color: #757575;
+}
+
+.contacts-mail {
+  margin: 0px 50px 0px 0px;
+  color: #757575;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__header {
+  background-color: #2f303a;
+  height: 600px;
+  width: 1600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__title {
+  max-width: 696px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: 2.64px;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin: 200px 0px 37px 0px;
+}
+
+.main__button {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: #2196f3;
+  padding: 10px 31px;
+  border: 0px;
+  text-align: center;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  outline: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  line-height: 30px;
+}
+
+.main__benefits {
+  margin: 92px 15px 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #212121;
+  letter-spacing: 0.42px;
+}
+
+.main__benefits > *:not(:last-child) {
+  margin: 0px 30px 0px 0px;
+}
+
+.main .benefits__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+}
+
+.main .benefits__title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.main .benefits__subtitle {
+  color: #757575;
+  line-height: 24px;
+}
+
+.main__direction {
+  margin: 94px 15px 0 15px;
+}
+
+.direction__row {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.333px;
+          flex: 1 1 33.333px;
+}
+
+.direction__column {
+  margin: 50px 0 94px 0;
+}
+
+.direction__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.direction__item > *:not(:last-child) {
+  margin: 0px 30px 0px 0px;
+}
+
+.main__team {
+  height: 648px;
+  width: 1600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f4fa;
+}
+
+.team__title {
+  margin: 94px 0 0 0;
+}
+
+.team__row {
+  width: 1200px;
+  margin: 0px 15px 0 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+}
+
+.team__column {
+  margin: 50px 0 94px 0;
+}
+
+.team__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team__item > *:not(:last-child) {
+  margin: 0px 30px 0px 0px;
+}
+
+.item__block {
+  text-align: center;
+  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.item__title {
+  margin: 30px 0 10px 0;
+  color: #212121;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+}
+
+.item__subtitle {
+  color: #757575;
+  font-size: 16px;
+  letter-spacing: 0.48px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__main {
+  background-color: #2f303a;
+  height: 252px;
+  width: 1600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__content {
+  margin: 60px 0 0 215px;
+}
+
+.footer__logo {
+  margin: 0 0 20px 0;
+}
+
+.footer__address {
+  margin: 0 0 9px 0;
+  color: #ffffff;
+  letter-spacing: 0.42px;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 21px;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.42px;
+  line-height: 24px;
+  margin: 0 0 9px 0;
+}
+
+.footer__mail {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 9px 0;
+}
+
+.footer__tel {
+  color: rgba(255, 255, 255, 0.6);
+}
