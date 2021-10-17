@@ -101,30 +101,12 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-.wrapper {
-  width: 1600px;
-  min-height: 100%;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 0 0 -800px;
-  position: absolute;
-  left: 50%;
-}
-
 body {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-}
-
-.container {
   width: 1200px;
+  height: 2349px;
   margin: 0 auto;
 }
 
@@ -144,12 +126,6 @@ body {
 
 .header__logo {
   margin: 0px 92px 0px 15px;
-}
-
-.header__main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .header__contacts {
@@ -177,7 +153,7 @@ body {
   display: flex;
 }
 
-.main__menu > *:not(:last-child) {
+.main__menu *:not(:last-child) {
   margin: 0px 50px 0px 0px;
 }
 
@@ -291,20 +267,11 @@ body {
   margin: 94px 15px 0 15px;
 }
 
-.direction__row {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 33.333px;
-          flex: 1 1 33.333px;
-}
-
-.direction__column {
-  margin: 50px 0 94px 0;
-}
-
 .direction__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 50px 0 94px 0;
 }
 
 .direction__item > *:not(:last-child) {
@@ -331,19 +298,8 @@ body {
   margin: 94px 0 0 0;
 }
 
-.team__row {
-  width: 1200px;
-  margin: 0px 15px 0 15px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 25%;
-          flex: 1 1 25%;
-}
-
-.team__column {
-  margin: 50px 0 94px 0;
-}
-
 .team__item {
+  margin: 50px 15px 94px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,16 +358,13 @@ body {
           flex-direction: column;
 }
 
-.footer__content {
-  margin: 60px 0 0 215px;
-}
-
 .footer__logo {
-  margin: 0 0 20px 0;
+  display: block;
+  margin: 60px 0 20px 215px;
 }
 
 .footer__address {
-  margin: 0 0 9px 0;
+  margin: 0 0 9px 215px;
   color: #ffffff;
   letter-spacing: 0.42px;
   font-style: normal;
@@ -430,7 +383,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.42px;
   line-height: 24px;
-  margin: 0 0 9px 0;
+  margin: 0 0 9px 215px;
 }
 
 .footer__mail {
