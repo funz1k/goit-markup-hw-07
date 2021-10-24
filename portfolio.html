@@ -1,15 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
+    <!--Header-->
+    <header class="header">
+        <div class="header__main">
+            <a href="/" class="header__logo logo"><span>Web</span>Studio</a>
+            <nav class="main__nav">
+                <ul class="main__menu">
+                    <li class="main__item"><a href="#">Студия</a></li>
+                    <li class="main__item link__active"><a href="./portfolio.html">Портфолио</a></li>
+                    <li class="main__item"><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__contacts">
+                <a href="mailto:info@devstudio.com" class="contacts-mail">info@devstudio.com</a>
+                <a href="tel:+380961111111" class="cotactes-tel">+38 096 111 11 11</a>
+            </div>
+        </div>
+    </header>
+    <!--Main-->
+    <main class="main__portfolio">
+        <section class="main__filter">
+            <ul class="filter__list">
+                <li><button type="button" class="filter__button active">Все</button></li>
+                <li><button type="button" class="filter__button">Веб-сайты</button></li>
+                <li><button type="button" class="filter__button">Приложения</button></li>
+                <li><button type="button" class="filter__button">Дизайн</button></li>
+                <li><button type="button" class="filter__button">Маркетинг</button></li>
+            </ul>
+        </section>
+        <section class="main__projects">
+            <ul class="projects__list">
+                <li class="projects__item">
+                    <img src="./img/portfolio/portfolio_1.jpg" alt="Технокряк" width="370">
+                    <h3 class="item__title">Технокряк</h3>
+                    <p class="item__subtitle">Веб-сайт</p>
+                </li>
+                <li class="projects__item">
+                    <img src="./img/portfolio/portfolio_2.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                    <h3 class="item__title">Постер New Orlean vs Golden Star</h3>
+                    <p class="item__subtitle">Дизайн</p>
+                </li>
+                <li class="projects__item">
+                    <img src="./img/portfolio/portfolio_3.jpg" alt="Ресторан Seafood" width="370">
+                    <h3 class="item__title">Ресторан Seafood</h3>
+                    <p class="item__subtitle">Приложение</p>
+                </li>
+                <li class="projects__item">
+                    <img src="./img/portfolio/portfolio_4.jpg" alt="Проект Prime" width="370">
+                    <h3 class="item__title">Проект Prime</h3>
+                    <p class="item__subtitle">Маркетинг</p>
+                </li>
+                <li class="projects__item">
+                    <img src="./img/portfolio/portfolio_5.jpg" alt="Проект Boxes" width="370">
+                    <h3 class="item__title">Проект Boxes</h3>
+                    <p class="item__subtitle">Приложение</p>
+                </li>
+                <li class="projects__item">
+                    <img src="./img/portfolio/portfolio_6.jpg" alt="Веб-сайт" width="370">
+                    <h3 class="item__title">Inspiration has no Borders</h3>
+                    <p class="item__subtitle">Веб-сайт</p>
+                </li>
+                <li class="projects__item">
+                    <img src="./img/portfolio/portfolio_7.jpg" alt="Издание Limited Edition" width="370">
+                    <h3 class="item__title">Издание Limited Edition</h3>
+                    <p class="item__subtitle">Дизайн</p>
+                </li>
+                <li class="projects__item">
+                    <img src="./img/portfolio/portfolio_8.jpg" alt="Проект LAB" width="370">
+                    <h3 class="item__title">Проект LAB</h3>
+                    <p class="item__subtitle">Маркетинг</p>
+                </li>
+                <li class="projects__item">
+                    <img src="./img/portfolio/portfolio_9.jpg" alt="Приложение" width="370">
+                    <h3 class="item__title">Growing Business</h3>
+                    <p class="item__subtitle">Приложение</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer__main">
+            <a class="footer__logo logo" href="#" target="blank"><span>Web</span>Studio</a>
+            <address class="footer__address">г. Киев, пр-т Леси Украинки, 26
+            </address>
+            <div class="footer__contacts">
+                <a href="mailto:info@devstudio.com" class="footer__mail">info@devstudio.com</a>
+                <a href="tel:+380961111111" class="footer__tel">+38 096 111 11 11</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
