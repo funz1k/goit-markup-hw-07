@@ -360,7 +360,7 @@ body {
 .project__subtitle {
   color: var(--color-contacts);
   font-size: 16px;
-  line-height: ;
+  line-height: 2;
   letter-spacing: 1.08px;
   margin: 0 0 30px 24px;
 }
