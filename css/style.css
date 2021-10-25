@@ -17,10 +17,11 @@
 }
 
 .title {
+  line-height: 1.16;
   color: var(--color-href);
   font-size: 36px;
   font-weight: 700;
-  letter-spacing: 1.08px;
+  letter-spacing: 0.03em;
   text-align: center;
   margin: 0;
 }
@@ -32,6 +33,7 @@
   --color-main: #2f303a;
   --color-main-team: #f5f4fa;
   --color-contacts: #757575;
+  --color-footer-contacts: rgba(255, 255, 255, 0.6);
   --color-href: #212121;
 }
 /*----------------------------------------*/
@@ -39,7 +41,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.714;
+  line-height: 1.14;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -61,7 +63,7 @@ body {
 .header__contacts {
   display: inline-block;
   font-weight: 500;
-  letter-spacing: 0.28px;
+  letter-spacing: 0.02em;
 }
 
 .header__contacts :hover,
@@ -75,11 +77,13 @@ body {
 }
 
 .main__menu {
-  font-size: 16px;
+  line-height: 1.14;
   font-weight: 500;
-  letter-spacing: 0.28px;
+  letter-spacing: 0.02em;
   display: flex;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .main__menu [href] {
   color: var(--color-href);
@@ -96,11 +100,13 @@ body {
 }
 
 .cotactes-tel {
+  line-height: 1.71;
   color: var(--color-contacts);
   text-decoration: none;
 }
 
 .contacts-mail {
+  line-height: 1.71;
   margin: 0px 50px 0px 0px;
   color: var(--color-contacts);
   text-decoration: none;
@@ -128,7 +134,7 @@ body {
   color: var(--color-white);
   font-size: 44px;
   font-weight: 900;
-  letter-spacing: 2.64px;
+  letter-spacing: 0.06em;
   line-height: 1.36;
   text-transform: uppercase;
   margin: 200px 0px 37px 0px;
@@ -147,7 +153,7 @@ body {
   color: var(--color-white);
   font-size: 16px;
   font-weight: 700;
-  letter-spacing: 0.96px;
+  letter-spacing: 0.06em;
   line-height: 1.875;
   cursor: pointer;
 }
@@ -158,8 +164,8 @@ body {
   margin: 92px 15px 0 15px;
   display: flex;
   color: var(--color-href);
-  letter-spacing: 0.42px;
   list-style: none;
+  padding: 0;
 }
 
 .benefits__list > *:not(:last-child) {
@@ -174,10 +180,13 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
+  letter-spacing: 0.03em;
   margin: 0 0 10px 0;
 }
 
 .benefits__subtitle {
+  line-height: 1.714;
+  letter-spacing: 0.03em;
   color: var(--color-contacts);
   margin: 0;
 }
@@ -190,6 +199,7 @@ body {
   display: flex;
   margin: 50px 0 94px 0;
   list-style: none;
+  padding: 0;
 }
 
 .direction__list > *:not(:last-child) {
@@ -210,6 +220,7 @@ body {
   margin: 50px 15px 0px 15px;
   display: flex;
   list-style: none;
+  padding: 0;
 }
 
 .team__list > *:not(:last-child) {
@@ -224,17 +235,19 @@ body {
 }
 
 .item__title {
+  line-height: 1.18;
   margin: 30px 0 10px 0;
   color: var(--color-href);
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.03em;
 }
 
 .item__subtitle {
+  line-height: 1.18;
   color: var(--color-contacts);
   font-size: 16px;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.03em;
   margin: 0;
   margin-bottom: 30px;
 }
@@ -261,9 +274,10 @@ body {
 }
 
 .footer__address {
+  line-height: 1.71;
   margin: 0 0 9px 215px;
   color: var(--color-white);
-  letter-spacing: 0.42px;
+  letter-spacing: 0.03em;
   font-style: normal;
   max-width: 231px;
 }
@@ -272,7 +286,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 21px;
-  letter-spacing: 0.42px;
+  letter-spacing: 0.03em;
   margin: 0 0 9px 215px;
 }
 .footer__contacts :hover,
@@ -281,14 +295,16 @@ body {
   outline: none;
 }
 .footer__mail {
-  color: var(--color-contacts);
+  line-height: 1.71;
+  color: var(--color-footer-contacts);
   margin: 0 0 9px 0;
   text-decoration: none;
   max-width: 231px;
 }
 
 .footer__tel {
-  color: var(--color-contacts);
+  line-height: 1.71;
+  color: var(--color-footer-contacts);
   text-decoration: none;
   max-width: 231px;
 }
@@ -298,26 +314,33 @@ body {
   margin-bottom: 94px;
 }
 .main__filter {
-  margin: 94px 0 50px 0;
+  margin: 94px 0 0 0;
 }
 .filter__list {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   list-style: none;
 }
 .filter__list > *:not(:last-child) {
   margin: 0px 8px 0px 0px;
+  padding: 0;
 }
 .filter__button {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.625;
   font-family: inherit;
   border: 0;
-  width: 128px;
-  height: 38px;
+  padding: 6px 22px;
   border-radius: 4px;
   background-color: var(--color-main-team);
   cursor: pointer;
 }
 .main__projects {
+  margin-top: 34px;
   display: flex;
   justify-content: center;
 }
@@ -355,12 +378,12 @@ body {
   font-size: 18px;
   line-height: 2;
   font-weight: 700;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.06em;
 }
 .project__subtitle {
   color: var(--color-contacts);
   font-size: 16px;
-  line-height: 2;
-  letter-spacing: 1.08px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
   margin: 0 0 30px 24px;
 }
