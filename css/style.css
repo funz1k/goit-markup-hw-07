@@ -19,6 +19,7 @@ p {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .section {
@@ -71,7 +72,8 @@ body {
 }
 /*------------Header---------------*/
 .header {
-  padding: 25px 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   display: flex;
   justify-content: center;
   border-bottom: 1px solid var(--color-main-team);
@@ -161,6 +163,8 @@ body {
 }
 
 .main__button {
+  display: block;
+  margin: 0 auto;
   font-family: inherit;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -184,7 +188,6 @@ body {
 }
 
 .benefits__list {
-  margin: 0 15px;
   display: flex;
   color: var(--color-href);
   list-style: none;
@@ -214,10 +217,6 @@ body {
 
 /*=========== MAIN__DIRECTION ==============*/
 
-.main__direction {
-  margin: 0 15px;
-}
-
 .direction__list {
   display: flex;
   margin-top: 50px;
@@ -230,8 +229,7 @@ body {
 /*============== MAIN__TEAM ===============*/
 
 .main__team {
-  margin: 0 15px;
-  max-width: 1600px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: var(--color-main-team);
@@ -269,23 +267,16 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
-/*--------Footer-----------------*/
+/*=============== FOOTER ======================*/
 .footer {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+  padding: 60px 0;
+  background-color: var(--color-main);
+  width: 100%;
 }
 
 .footer__main {
-  padding: 60px 15px;
-  background-color: var(--color-main);
-  width: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.footer-container {
-  max-width: 231px;
 }
 
 .footer__logo {
@@ -325,12 +316,11 @@ body {
   color: var(--color-footer-contacts);
   text-decoration: none;
 }
-/*---------Portfolio-----------------------------*/
+/*=================== PORTFOLIO ====================*/
 
 .filter__list {
   display: flex;
   justify-content: center;
-  margin: 0 15px;
 }
 .filter__list > *:not(:last-child) {
   margin: 0px 8px 0px 0px;
@@ -347,6 +337,8 @@ body {
   background-color: var(--color-main-team);
   cursor: pointer;
 }
+
+/*================== PROJECTS ========================*/
 .main__projects {
   margin-top: 50px;
   display: flex;
@@ -356,14 +348,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: -15px 0;
+  margin: -15px -15px;
 }
-/*.projects__list :nth-child(4),
-.projects__list :nth-child(5),
-.projects__list :nth-child(6) {
-  margin: 30px 0px 30px 0px;
-}*/
 .projects__item {
+  padding: 0;
   margin: 15px;
   max-width: 370px;
   position: relative;
