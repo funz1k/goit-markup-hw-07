@@ -151,7 +151,6 @@ body {
 
 .main__title {
   max-width: 696px;
-  justify-self: center;
   text-align: center;
   color: var(--color-white);
   font-size: 44px;
@@ -350,7 +349,6 @@ body {
 .projects__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: -15px;
 }
 .projects__item {
