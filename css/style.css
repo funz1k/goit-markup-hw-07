@@ -51,6 +51,12 @@ p {
   letter-spacing: 0.03em;
   text-align: center;
 }
+.block__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
 
 /*=================== ROOT ====================*/
 :root {
@@ -238,10 +244,6 @@ body {
 }
 
 .benefits__title {
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.03em;
   margin: 0 0 10px 0;
 }
 
@@ -349,8 +351,6 @@ body {
 
 /*================== MAIN__CLIENTS ==================*/
 
-.main__clients {
-}
 .clients__title {
   font-weight: 700;
   font-size: 36px;
@@ -389,7 +389,6 @@ body {
 
 .footer__main {
   display: flex;
-  flex-direction: column;
 }
 
 .footer__logo {
