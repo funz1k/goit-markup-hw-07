@@ -348,7 +348,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: -15px -15px;
+  margin: -15px;
 }
 .projects__item {
   padding: 0;
