@@ -23,7 +23,7 @@
 <body>
     <!--===================== HEADER====================-->
     <header class="header">
-        <div class="header__main  container">
+        <div class="header__main container">
             <a href="/" class="header__logo logo"><span>Web</span>Studio</a>
             <nav class="main__nav">
                 <ul class="main__menu">
@@ -39,67 +39,88 @@
         </div>
     </header>
     <!--================ MAIN ========================-->
-    <main class="main__portfolio container">
-        <section class="main__filter section">
-            <!--============== FILTER ===============-->
-            <ul class="filter__list">
-                <li><button type="button" class="filter__button active">Все</button></li>
-                <li><button type="button" class="filter__button">Веб-сайты</button></li>
-                <li><button type="button" class="filter__button">Приложения</button></li>
-                <li><button type="button" class="filter__button">Дизайн</button></li>
-                <li><button type="button" class="filter__button">Маркетинг</button></li>
-            </ul>
-            <!--============ PROJECTS =================-->
-            <div class="main__projects">
-                <ul class="projects__list">
-                    <li class="projects__item">
-                        <img src="./img/portfolio/portfolio_1.jpg" alt="Технокряк" width="370">
-                        <h3 class="project__title">Технокряк</h3>
-                        <p class="project__subtitle">Веб-сайт</p>
-                    </li>
-                    <li class="projects__item">
-                        <img src="./img/portfolio/portfolio_2.jpg" alt="Постер New Orlean vs Golden Star" width="370">
-                        <h3 class="project__title">Постер New Orlean vs Golden Star</h3>
-                        <p class="project__subtitle">Дизайн</p>
-                    </li>
-                    <li class="projects__item">
-                        <img src="./img/portfolio/portfolio_3.jpg" alt="Ресторан Seafood" width="370">
-                        <h3 class="project__title">Ресторан Seafood</h3>
-                        <p class="project__subtitle">Приложение</p>
-                    </li>
-                    <li class="projects__item">
-                        <img src="./img/portfolio/portfolio_4.jpg" alt="Проект Prime" width="370">
-                        <h3 class="project__title">Проект Prime</h3>
-                        <p class="project__subtitle">Маркетинг</p>
-                    </li>
-                    <li class="projects__item">
-                        <img src="./img/portfolio/portfolio_5.jpg" alt="Проект Boxes" width="370">
-                        <h3 class="project__title">Проект Boxes</h3>
-                        <p class="item__subtitle">Приложение</p>
-                    </li>
-                    <li class="projects__item">
-                        <img src="./img/portfolio/portfolio_6.jpg" alt="Веб-сайт" width="370">
-                        <h3 class="project__title">Inspiration has no Borders</h3>
-                        <p class="project__subtitle">Веб-сайт</p>
-                    </li>
-                    <li class="projects__item">
-                        <img src="./img/portfolio/portfolio_7.jpg" alt="Издание Limited Edition" width="370">
-                        <h3 class="project__title">Издание Limited Edition</h3>
-                        <p class="project__subtitle">Дизайн</p>
-                    </li>
-                    <li class="projects__item">
-                        <img src="./img/portfolio/portfolio_8.jpg" alt="Проект LAB" width="370">
-                        <h3 class="project__title">Проект LAB</h3>
-                        <p class="project__subtitle">Маркетинг</p>
-                    </li>
-                    <li class="projects__item">
-                        <img src="./img/portfolio/portfolio_9.jpg" alt="Приложение" width="370">
-                        <h3 class="project__title">Growing Business</h3>
-                        <p class="project__subtitle">Приложение</p>
-                    </li>
+    <main class="main__portfolio">
+        <div class="container">
+            <section class="main__filter section">
+                <!--============== FILTER ===============-->
+                <ul class="filter__list">
+                    <li><button type="button" class="filter__button active">Все</button></li>
+                    <li><button type="button" class="filter__button">Веб-сайты</button></li>
+                    <li><button type="button" class="filter__button">Приложения</button></li>
+                    <li><button type="button" class="filter__button">Дизайн</button></li>
+                    <li><button type="button" class="filter__button">Маркетинг</button></li>
                 </ul>
-            </div>
-        </section>
+                <!--============ PROJECTS =================-->
+                <div class="main__projects">
+                    <ul class="projects__list">
+                        <li class="projects__item">
+                            <img src="./img/portfolio/portfolio_1.jpg" alt="Технокряк" width="370">
+                            <div class="project__block">
+                                <h3 class="project__title">Технокряк</h3>
+                                <p class="project__subtitle">Веб-сайт</p>
+                            </div>
+                        </li>
+                        <li class="projects__item">
+                            <img src="./img/portfolio/portfolio_2.jpg" alt="Постер New Orlean vs Golden Star"
+                                width="370">
+                            <div class="project__block">
+                                <h3 class="project__title">Постер New Orlean vs Golden Star</h3>
+                                <p class="project__subtitle">Дизайн</p>
+                            </div>
+                        </li>
+                        <li class="projects__item">
+                            <img src="./img/portfolio/portfolio_3.jpg" alt="Ресторан Seafood" width="370">
+                            <div class="project__block">
+                                <h3 class="project__title">Ресторан Seafood</h3>
+                                <p class="project__subtitle">Приложение</p>
+                            </div>
+                        </li>
+                        <li class="projects__item">
+                            <img src="./img/portfolio/portfolio_4.jpg" alt="Проект Prime" width="370">
+                            <div class="project__block">
+                                <h3 class="project__title">Проект Prime</h3>
+                                <p class="project__subtitle">Маркетинг</p>
+                            </div>
+                        </li>
+                        <li class="projects__item">
+                            <img src="./img/portfolio/portfolio_5.jpg" alt="Проект Boxes" width="370">
+                            <div class="project__block">
+                                <h3 class="project__title">Проект Boxes</h3>
+                                <p class="project__subtitle">Приложение</p>
+                            </div>
+                        </li>
+                        <li class="projects__item">
+                            <img src="./img/portfolio/portfolio_6.jpg" alt="Веб-сайт" width="370">
+                            <div class="project__block">
+                                <h3 class="project__title">Inspiration has no Borders</h3>
+                                <p class="project__subtitle">Веб-сайт</p>
+                            </div>
+                        </li>
+                        <li class="projects__item">
+                            <img src="./img/portfolio/portfolio_7.jpg" alt="Издание Limited Edition" width="370">
+                            <div class="project__block">
+                                <h3 class="project__title">Издание Limited Edition</h3>
+                                <p class="project__subtitle">Дизайн</p>
+                            </div>
+                        </li>
+                        <li class="projects__item">
+                            <img src="./img/portfolio/portfolio_8.jpg" alt="Проект LAB" width="370">
+                            <div class="project__block">
+                                <h3 class="project__title">Проект LAB</h3>
+                                <p class="project__subtitle">Маркетинг</p>
+                            </div>
+                        </li>
+                        <li class="projects__item">
+                            <img src="./img/portfolio/portfolio_9.jpg" alt="Приложение" width="370">
+                            <div class="project__block">
+                                <h3 class="project__title">Growing Business</h3>
+                                <p class="project__subtitle">Приложение</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </main>
     <!--================ FOOTER ====================-->
     <footer class="footer">

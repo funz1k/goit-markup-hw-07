@@ -6,7 +6,7 @@
 
 h1,
 h2,
-h2,
+h3,
 h4,
 h5,
 h6,
@@ -244,16 +244,20 @@ body {
   margin: 0px 30px 0px 0px;
 }
 
-.team__block {
+.team__items {
   text-align: center;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   background-color: var(--color-white);
 }
 
+.team__block {
+  padding: 30px 0;
+}
+
 .team__name {
   line-height: 1.18;
-  margin: 30px 0 10px 0;
+  margin-bottom: 10px;
   color: var(--color-href);
   font-size: 16px;
   font-weight: 500;
@@ -265,7 +269,6 @@ body {
   color: var(--color-contacts);
   font-size: 16px;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
 }
 /*=============== FOOTER ======================*/
 .footer {
@@ -366,8 +369,13 @@ body {
 .link__active :visited {
   color: var(--color-link);
 }
+
+.project__block {
+  padding: 20px 24px;
+}
+
 .project__title {
-  margin: 20px 0 4px 24px;
+  margin-bottom: 4px;
   color: var(--color-href);
   font-size: 18px;
   line-height: 2;
@@ -379,5 +387,4 @@ body {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  margin: 0 0 20px 24px;
 }
