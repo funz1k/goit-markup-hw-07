@@ -15,7 +15,7 @@ p {
   margin: 0;
 }
 
-/*-------Logo and title blocks (repeat)-------------*/
+/*====== Container, Logo and title blocks (repeat) ======*/
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -52,7 +52,7 @@ p {
   text-align: center;
 }
 
-/*-------------Root----------------------*/
+/*=================== ROOT ====================*/
 :root {
   --color-link: #2196f3;
   --color-white: #ffffff;
@@ -62,7 +62,7 @@ p {
   --color-footer-contacts: rgba(255, 255, 255, 0.6);
   --color-href: #212121;
 }
-/*----------------------------------------*/
+/*===================================================*/
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -70,7 +70,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
 }
-/*------------Header---------------*/
+/*==================== HEADER ==========================*/
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -133,7 +133,7 @@ body {
   color: var(--color-contacts);
   text-decoration: none;
 }
-/*================= Main =========================*/
+/*================= MAIN =========================*/
 .main {
   display: flex;
   flex-direction: column;
