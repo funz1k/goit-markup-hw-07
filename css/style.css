@@ -418,12 +418,13 @@ body {
   flex-direction: column;
   letter-spacing: 0.03em;
 }
-.footer__contacts :hover,
+.footer__contacts :hover:not(:nth-child(-n + 2)),
 .footer__contacts :focus {
   color: var(--color-link);
   outline: none;
 }
 .footer__mail {
+  display: inline-block;
   line-height: 1.71;
   color: var(--color-footer-contacts);
   margin: 0 0 9px 0;
@@ -496,7 +497,7 @@ body {
   outline: none;
 }
 .projects__item:hover,
-.projects__item:focus {
+.project__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .active {
