@@ -68,6 +68,8 @@ p {
   --color-footer-contacts: rgba(255, 255, 255, 0.6);
   --color-href: #212121;
   --color-icons: #afb1b8;
+  --color-icons-footer: rgba(255, 255, 255, 0.1);
+  --color-project-item: #eeeeee;
 }
 /*===================================================*/
 body {
@@ -82,10 +84,10 @@ body {
   padding-top: 25px;
   padding-bottom: 25px;
   display: flex;
-  justify-content: center;
+}
+.header__portfolio {
   border-bottom: 1px solid var(--color-main-team);
 }
-
 .header__main {
   width: 100%;
   align-items: center;
@@ -328,6 +330,7 @@ body {
   margin: 0px 10px 0px 0px;
 }
 .social__link {
+  display: inline-block;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -369,17 +372,21 @@ body {
   padding: 16px 32px;
   border: 1px solid var(--color-icons);
   border-radius: 4px;
+  outline: none;
 }
-.clients__item:hover,
-.clients__item:focus {
-  border-color: var(--color-link);
-}
+
 .clients__icon {
   fill: var(--color-icons);
   width: 106px;
   height: 60px;
 }
-
+.clients__item:hover,
+.clients__item:hover svg,
+.clients__item:focus,
+.clients__item:focus svg {
+  fill: var(--color-link);
+  border-color: var(--color-link);
+}
 /*=============== FOOTER ======================*/
 .footer {
   padding: 60px 0;
@@ -428,6 +435,21 @@ body {
   color: var(--color-footer-contacts);
   text-decoration: none;
 }
+/*================= FOOTER__SOCIAL ================*/
+.footer__social {
+  margin-left: 70px;
+}
+.social__title {
+  padding-left: 32px;
+  margin-bottom: 20px;
+  color: var(--color-white);
+}
+.footer__link {
+  background-color: var(--color-icons-footer);
+}
+.social__icon-white {
+  fill: var(--color-white);
+}
 /*=================== PORTFOLIO ====================*/
 
 .filter__list {
@@ -466,10 +488,17 @@ body {
   margin: 15px;
   max-width: 370px;
   position: relative;
-  border: 1px solid #eeeeee;
-  background-color: #ffffff;
+  border: 1px solid var(--color-project-item);
+  background-color: var(--color-white);
 }
-
+.project__link {
+  text-decoration: none;
+  outline: none;
+}
+.projects__item:hover,
+.projects__item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .active {
   background-color: var(--color-link);
   color: var(--color-white);
