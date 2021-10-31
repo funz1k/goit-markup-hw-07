@@ -419,7 +419,7 @@ body {
   letter-spacing: 0.03em;
 }
 .footer__contacts :hover:not(:nth-child(-n + 2)),
-.footer__contacts :focus {
+.footer__contacts :focus:not(:nth-child(-n + 2)) {
   color: var(--color-link);
   outline: none;
 }
