@@ -255,7 +255,11 @@ body {
   color: var(--color-contacts);
 }
 .benefits__block {
-  padding: 25px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
   background-color: var(--color-main-team);
   border-radius: 4px;
   margin-bottom: 30px;
@@ -368,8 +372,11 @@ body {
   margin: 0px 30px 0px 0px;
 }
 .clients__item {
-  display: inline-block;
-  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--color-icons);
   border-radius: 4px;
   outline: none;
@@ -472,7 +479,11 @@ body {
   background-color: var(--color-main-team);
   cursor: pointer;
 }
-
+.filter__button:hover,
+.filter__button:focus {
+  background-color: var(--color-link);
+  color: var(--color-white);
+}
 /*================== PROJECTS ========================*/
 .main__projects {
   margin-top: 50px;
@@ -500,10 +511,10 @@ body {
 .project__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.active {
+/*.active {
   background-color: var(--color-link);
   color: var(--color-white);
-}
+}*/
 .link__active :visited {
   color: var(--color-link);
 }
