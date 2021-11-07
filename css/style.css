@@ -403,35 +403,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-/*======================= CARDS =====================
-.scene {
-  width: 270px;
-  min-height: 428px;
-  margin: 40px 0;
-  perspective: 600px;
-}
-.card {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transition: transform 1s;
-  transform-style: preserve-3d;
-}
-.card.is-flipped {
-  transform: rotateY(180deg);
-}
-.card-face {
-  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  backface-visibility: hidden;
-}
-.card__face--front {
-}
-.card-face--back {
-  transform: rotateY(180deg);
-}=========================================================*/
 /*================ SOCIAL__BLOCK ====================*/
 .social__block {
   display: flex;
