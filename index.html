@@ -29,9 +29,10 @@
 			<!--========== MAIN__NAV ==================-->
 			<nav class="main__nav">
 				<ul class="main__menu">
-					<li class="main__item link__active"><a href="./index.html">Студия</a></li>
-					<li class="main__item"><a href="./portfolio.html">Портфолио</a></li>
-					<li class="main__item"><a href="#">Контакты</a></li>
+					<li class="main__item link__active"><a href="./index.html" class="main__link link-active">Студия</a>
+					</li>
+					<li class="main__item"><a href="./portfolio.html" class="main__link">Портфолио</a></li>
+					<li class="main__item"><a href="#" class="main__link">Контакты</a></li>
 				</ul>
 			</nav>
 
@@ -41,7 +42,7 @@
 						<use href="./img/svg/icons.svg#icon-header-mail"></use>
 					</svg>
 					info@devstudio.com</a>
-				<a href="tel:+380961111111" class="cotactes-tel"><svg class="tel__icon">
+				<a href="tel:+380961111111" class="cotacts-tel"><svg class="tel__icon">
 						<use href="./img/svg/icons.svg#icon-header-phone"></use>
 					</svg>
 					+38 096 111 11 11</a>
@@ -55,7 +56,7 @@
 			<div class="container main__header-block">
 				<h1 class="main__title">Эффективные решения для вашего бизнеса
 				</h1>
-				<button class="main__button" type="button">
+				<button class="main__button" data-modal-open type="button">
 					Заказать услугу
 				</button>
 			</div>
@@ -114,9 +115,24 @@
 			<div class="container">
 				<h2 class="direction__title title">Чем мы занимаемся</h2>
 				<ul class="direction__list">
-					<li> <img src="./img/work/box1.jpg" alt="Разрабатываем приложения" width="370"> </li>
-					<li><img src="./img/work/box2.jpg" alt="Адаптивные приложения" width="370"></li>
-					<li><img src="./img/work/box3.jpg" alt="Дизайн" width="370"></li>
+					<li class="direction__block">
+						<img src="./img/work/box1.jpg" alt="Разрабатываем приложения" width="370">
+						<div class="dierction__text-block">
+							<p class="direction__text">Десктопные приложения</p>
+						</div>
+					</li>
+					<li class="direction__block">
+						<img src="./img/work/box2.jpg" alt="Адаптивные приложения" width="370">
+						<div class="dierction__text-block">
+							<p class="direction__text">Мобильные приложения</p>
+						</div>
+					</li>
+					<li class="direction__block">
+						<img src="./img/work/box3.jpg" alt="Дизайн" width="370">
+						<div class="dierction__text-block">
+							<p class="direction__text">Дизайнерские решения</p>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</section>
@@ -373,6 +389,17 @@
 		</div>
 
 	</footer>
+	<div class="backdrop is-hidden" data-modal>
+		<div class="modal">
+			<button type="button " class="modal__close" data-modal-close>
+				<svg class="modal__close-icon">
+					<use href="./img/svg/icons.svg#icon-close-icon"></use>
+				</svg>
+			</button>
+		</div>
+	</div>
+	<script src="./js/modal.js"></script>
 </body>
+
 
 </html>

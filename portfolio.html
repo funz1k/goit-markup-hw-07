@@ -29,9 +29,10 @@
             <!--========== MAIN__NAV ==================-->
             <nav class="main__nav">
                 <ul class="main__menu">
-                    <li class="main__item link__active"><a href="./index.html">Студия</a></li>
-                    <li class="main__item"><a href="./portfolio.html">Портфолио</a></li>
-                    <li class="main__item"><a href="#">Контакты</a></li>
+                    <li class="main__item"><a href="./index.html" class="main__link">Студия</a></li>
+                    <li class="main__item"><a href="./portfolio.html" class="main__link link-active">Портфолио</a>
+                    </li>
+                    <li class="main__item"><a href="#" class="main__link">Контакты</a></li>
                 </ul>
             </nav>
 
@@ -41,7 +42,7 @@
                         <use href="./img/svg/icons.svg#icon-header-mail"></use>
                     </svg>
                     info@devstudio.com</a>
-                <a href="tel:+380961111111" class="cotactes-tel"><svg class="tel__icon">
+                <a href="tel:+380961111111" class="cotacts-tel"><svg class="tel__icon">
                         <use href="./img/svg/icons.svg#icon-header-phone"></use>
                     </svg>
                     +38 096 111 11 11</a>
@@ -66,88 +67,97 @@
                     <ul class="projects__list">
                         <li class="projects__item">
                             <a href="#" class="project__link">
-                                <img src="./img/portfolio/portfolio_1.jpg" alt="Технокряк" width="370">
+                                <div class="project__thumb">
+                                    <img src="./img/portfolio/portfolio_1.jpg" alt="Технокряк" width="370" height="294">
+                                    <div class="project__overlay">
+                                        <p class="project__text">
+                                            Технокряк это современная площадка распространения коронавируса. Компании
+                                            используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                                            конкурентов.
+                                        </p>
+                                    </div>
+                                </div>
                                 <div class="project__block">
                                     <h3 class="project__title">Технокряк</h3>
                                     <p class="project__subtitle">Веб-сайт</p>
                             </a>
+                        </li>
+                        <li class="projects__item">
+                            <a href="#" class="project__link">
+                                <img src="./img/portfolio/portfolio_2.jpg" alt="Постер New Orlean vs Golden Star"
+                                    width="370">
+                                <div class="project__block">
+                                    <h3 class="project__title">Постер New Orlean vs Golden Star</h3>
+                                    <p class="project__subtitle">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects__item">
+                            <a href="#" class="project__link">
+                                <img src="./img/portfolio/portfolio_3.jpg" alt="Ресторан Seafood" width="370">
+                                <div class="project__block">
+                                    <h3 class="project__title">Ресторан Seafood</h3>
+                                    <p class="project__subtitle">Приложение</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects__item">
+                            <a href="#" class="project__link">
+                                <img src="./img/portfolio/portfolio_4.jpg" alt="Проект Prime" width="370">
+                                <div class="project__block">
+                                    <h3 class="project__title">Проект Prime</h3>
+                                    <p class="project__subtitle">Маркетинг</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects__item">
+                            <a href="#" class="project__link">
+                                <img src="./img/portfolio/portfolio_5.jpg" alt="Проект Boxes" width="370">
+                                <div class="project__block">
+                                    <h3 class="project__title">Проект Boxes</h3>
+                                    <p class="project__subtitle">Приложение</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects__item">
+                            <a href="#" class="project__link">
+                                <img src="./img/portfolio/portfolio_6.jpg" alt="Веб-сайт" width="370">
+                                <div class="project__block">
+                                    <h3 class="project__title">Inspiration has no Borders</h3>
+                                    <p class="project__subtitle">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects__item">
+                            <a href="#" class="project__link">
+                                <img src="./img/portfolio/portfolio_7.jpg" alt="Издание Limited Edition" width="370">
+                                <div class="project__block">
+                                    <h3 class="project__title">Издание Limited Edition</h3>
+                                    <p class="project__subtitle">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects__item">
+                            <a href="#" class="project__link">
+                                <img src="./img/portfolio/portfolio_8.jpg" alt="Проект LAB" width="370">
+                                <div class="project__block">
+                                    <h3 class="project__title">Проект LAB</h3>
+                                    <p class="project__subtitle">Маркетинг</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects__item">
+                            <a href="#" class="project__link">
+                                <img src="./img/portfolio/portfolio_9.jpg" alt="Приложение" width="370">
+                                <div class="project__block">
+                                    <h3 class="project__title">Growing Business</h3>
+                                    <p class="project__subtitle">Приложение</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                </li>
-                <li class="projects__item">
-                    <a href="#" class="project__link">
-                        <img src="./img/portfolio/portfolio_2.jpg" alt="Постер New Orlean vs Golden Star" width="370">
-                        <div class="project__block">
-                            <h3 class="project__title">Постер New Orlean vs Golden Star</h3>
-                            <p class="project__subtitle">Дизайн</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="projects__item">
-                    <a href="#" class="project__link">
-                        <img src="./img/portfolio/portfolio_3.jpg" alt="Ресторан Seafood" width="370">
-                        <div class="project__block">
-                            <h3 class="project__title">Ресторан Seafood</h3>
-                            <p class="project__subtitle">Приложение</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="projects__item">
-                    <a href="#" class="project__link">
-                        <img src="./img/portfolio/portfolio_4.jpg" alt="Проект Prime" width="370">
-                        <div class="project__block">
-                            <h3 class="project__title">Проект Prime</h3>
-                            <p class="project__subtitle">Маркетинг</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="projects__item">
-                    <a href="#" class="project__link">
-                        <img src="./img/portfolio/portfolio_5.jpg" alt="Проект Boxes" width="370">
-                        <div class="project__block">
-                            <h3 class="project__title">Проект Boxes</h3>
-                            <p class="project__subtitle">Приложение</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="projects__item">
-                    <a href="#" class="project__link">
-                        <img src="./img/portfolio/portfolio_6.jpg" alt="Веб-сайт" width="370">
-                        <div class="project__block">
-                            <h3 class="project__title">Inspiration has no Borders</h3>
-                            <p class="project__subtitle">Веб-сайт</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="projects__item">
-                    <a href="#" class="project__link">
-                        <img src="./img/portfolio/portfolio_7.jpg" alt="Издание Limited Edition" width="370">
-                        <div class="project__block">
-                            <h3 class="project__title">Издание Limited Edition</h3>
-                            <p class="project__subtitle">Дизайн</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="projects__item">
-                    <a href="#" class="project__link">
-                        <img src="./img/portfolio/portfolio_8.jpg" alt="Проект LAB" width="370">
-                        <div class="project__block">
-                            <h3 class="project__title">Проект LAB</h3>
-                            <p class="project__subtitle">Маркетинг</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="projects__item">
-                    <a href="#" class="project__link">
-                        <img src="./img/portfolio/portfolio_9.jpg" alt="Приложение" width="370">
-                        <div class="project__block">
-                            <h3 class="project__title">Growing Business</h3>
-                            <p class="project__subtitle">Приложение</p>
-                        </div>
-                    </a>
-                </li>
-                </ul>
-        </div>
-        </section>
+            </section>
         </div>
     </main>
     <!--================ FOOTER ====================-->
@@ -197,7 +207,6 @@
                 </div>
             </div>
         </div>
-
     </footer>
 </body>
 

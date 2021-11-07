@@ -14,7 +14,9 @@ p {
   padding: 0;
   margin: 0;
 }
-
+img {
+  display: block;
+}
 /*====== Container, Logo and title blocks (repeat) ======*/
 .container {
   max-width: 1200px;
@@ -70,6 +72,7 @@ p {
   --color-icons: #afb1b8;
   --color-icons-footer: rgba(255, 255, 255, 0.1);
   --color-project-item: #eeeeee;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*===================================================*/
 body {
@@ -123,6 +126,7 @@ body {
 .main__menu [href] {
   color: var(--color-href);
   text-decoration: none;
+  transition: color 250ms var(--timing-function);
 }
 .main__menu *:not(:last-child) {
   margin: 0px 50px 0px 0px;
@@ -134,16 +138,55 @@ body {
   outline: none;
 }
 
-.cotactes-tel {
+/*======================== UNDERLINE__MENU ======================*/
+
+.main__link {
+  position: relative;
+}
+.main__link:not(.link-active):after {
+  content: "";
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--color-link);
+  border-radius: 2px;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function);
+}
+.main__link:not(.link-active):hover:after {
+  opacity: 1;
+  transform: translateX(0);
+}
+.link-active {
+  position: relative;
+}
+.link-active:after {
+  content: "";
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--color-link);
+  border-radius: 2px;
+}
+/*=======================================================*/
+.cotacts-tel {
   line-height: 1.71;
   color: var(--color-contacts);
   text-decoration: none;
+  transition: color 250ms var(--timing-function);
 }
 .tel__icon {
   fill: var(--color-contacts);
   margin-right: 10px;
   width: 10px;
   height: 16px;
+  transition: fill 250ms var(--timing-function);
 }
 
 .contacts-mail {
@@ -151,6 +194,7 @@ body {
   margin: 0px 50px 0px 0px;
   color: var(--color-contacts);
   text-decoration: none;
+  transition: color 250ms var(--timing-function);
 }
 
 .mail__icon {
@@ -158,9 +202,10 @@ body {
   margin-right: 10px;
   width: 16px;
   height: 12px;
+  transition: fill 250ms var(--timing-function);
 }
 
-/*================= MAIN =========================*/
+/*========================== MAIN =========================*/
 .main {
   display: flex;
   flex-direction: column;
@@ -226,7 +271,7 @@ body {
   cursor: pointer;
 }
 
-/*=========== MAIN__BENEFITS ====================*/
+/*========================== MAIN__BENEFITS ====================*/
 
 .main__benefits {
   padding-top: 94px;
@@ -276,11 +321,31 @@ body {
   display: flex;
   margin-top: 50px;
 }
-
 .direction__list > *:not(:last-child) {
   margin: 0px 30px 0px 0px;
 }
+.direction__block {
+  width: max-content;
+  height: max-content;
+  position: relative;
+}
 
+.dierction__text-block {
+  position: absolute;
+  width: 100%;
+  min-height: 70px;
+  bottom: 0;
+  left: 0;
+  background: rgba(47, 48, 58, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.direction__text {
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
 /*============== MAIN__TEAM ===============*/
 
 .main__team {
@@ -339,6 +404,7 @@ body {
   height: 44px;
   border-radius: 50%;
   padding: 12px;
+  transition: background-color 250ms var(--timing-function);
 }
 
 .social__link:focus,
@@ -354,6 +420,7 @@ body {
   width: 20px;
   height: 20px;
   fill: var(--color-icons);
+  transition: fill 250ms var(--timing-function);
 }
 
 /*================== MAIN__CLIENTS ==================*/
@@ -380,12 +447,14 @@ body {
   border: 1px solid var(--color-icons);
   border-radius: 4px;
   outline: none;
+  transition: border-color 250ms var(--timing-function);
 }
 
 .clients__icon {
   fill: var(--color-icons);
   width: 106px;
   height: 60px;
+  transition: fill 250ms var(--timing-function);
 }
 .clients__item:hover,
 .clients__item:hover svg,
@@ -436,12 +505,14 @@ body {
   color: var(--color-footer-contacts);
   margin: 0 0 9px 0;
   text-decoration: none;
+  transition: color 250ms var(--timing-function);
 }
 
 .footer__tel {
   line-height: 1.71;
   color: var(--color-footer-contacts);
   text-decoration: none;
+  transition: color 250ms var(--timing-function);
 }
 /*================= FOOTER__SOCIAL ================*/
 .footer__social {
@@ -478,6 +549,7 @@ body {
   border-radius: 4px;
   background-color: var(--color-main-team);
   cursor: pointer;
+  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 .filter__button:hover,
 .filter__button:focus {
@@ -499,25 +571,54 @@ body {
   padding: 0;
   margin: 15px;
   max-width: 370px;
-  position: relative;
   border: 1px solid var(--color-project-item);
   background-color: var(--color-white);
+  transition: box-shadow 250ms var(--timing-function);
 }
 .project__link {
   text-decoration: none;
   outline: none;
 }
-.projects__item:hover,
-.project__item:focus {
+
+/*================ TRANSITION__PROJECT ====================*/
+
+.project__thumb {
+  position: relative;
+  overflow: hidden;
+}
+.project__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function);
+}
+.project__text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  font-size: 18px;
+  transform: translate(-50%, -50%);
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--color-white);
+  padding: 63px 24px;
+  opacity: 1;
+}
+.projects__item:hover .project__overlay,
+.projects__item:hover {
+  transform: translateY(0);
+  opacity: 1;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-/*.active {
-  background-color: var(--color-link);
-  color: var(--color-white);
-}*/
-.link__active :visited {
-  color: var(--color-link);
-}
+
+/*===========================================================*/
 
 .project__block {
   padding: 20px 24px;
@@ -536,4 +637,54 @@ body {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
+}
+
+/*================== MODAL ========================*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms var(--timing-function);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.backdrop.is-hidden .modal {
+  transform: scale(1.1) translate(-50%, -50%);
+}
+.modal {
+  position: absolute;
+  min-width: 528px;
+  min-height: 581px;
+  top: 50%;
+  left: 50%;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%) scale(0.9);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms var(--timing-function);
+}
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.modal__close-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  transform: translate(-50%, -50%);
 }
