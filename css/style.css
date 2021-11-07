@@ -378,7 +378,7 @@ body {
 
 .team__items {
   text-align: center;
-
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--color-white);
 }
@@ -403,7 +403,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-/*======================= CARDS =====================*/
+/*======================= CARDS =====================
 .scene {
   width: 270px;
   min-height: 428px;
@@ -431,7 +431,7 @@ body {
 }
 .card-face--back {
   transform: rotateY(180deg);
-}
+}=========================================================*/
 /*================ SOCIAL__BLOCK ====================*/
 .social__block {
   display: flex;
