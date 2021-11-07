@@ -225,7 +225,9 @@ body {
   padding: 200px 0;
   position: relative;
 }
-
+.main__button:hover {
+  background: #188ce8;
+}
 .main__header::before {
   content: "";
   position: absolute;
