@@ -17,6 +17,10 @@ p {
 img {
   display: block;
 }
+button {
+  cursor: pointer;
+  border: none;
+}
 /*====== Container, Logo and title blocks (repeat) ======*/
 .container {
   max-width: 1200px;
@@ -58,6 +62,21 @@ img {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.03em;
+}
+
+.button {
+  display: block;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--color-link);
+  min-width: 200px;
+  min-height: 50px;
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.875;
+  font-family: inherit;
 }
 
 /*=================== ROOT ====================*/
@@ -225,9 +244,7 @@ body {
   padding: 200px 0;
   position: relative;
 }
-.main__button:hover {
-  background: #188ce8;
-}
+
 .main__header::before {
   content: "";
   position: absolute;
@@ -256,25 +273,14 @@ body {
 }
 
 .main__button {
+  transform: translate(-50%);
   position: absolute;
   bottom: 0%;
   left: 50%;
-  transform: translate(-50%);
-  display: block;
-  margin: 0 auto;
-  font-family: inherit;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  background-color: var(--color-link);
-  padding: 10px 31px;
-  outline: none;
-  border: 0;
-  color: var(--color-white);
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  line-height: 1.875;
-  cursor: pointer;
+}
+
+.button:hover {
+  background: #188ce8;
 }
 .main__button.animate {
   border-bottom: 5px solid #2980b9;
@@ -544,6 +550,36 @@ body {
 .social__icon-white {
   fill: var(--color-white);
 }
+.footer__feedback {
+  margin-left: auto;
+}
+.feedback__title {
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+.feedback__block {
+  display: flex;
+}
+.feedback__input {
+  min-width: 358px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px;
+}
+.feedback__input::placeholder {
+  font-size: 16px;
+  line-height: 0.8;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.feedback__button {
+  margin-left: 12px;
+}
+
 /*=================== PORTFOLIO ====================*/
 
 .filter__list {
@@ -687,7 +723,9 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 500ms var(--timing-function);
+  padding: 40px;
 }
+
 .modal__close {
   position: absolute;
   top: 8px;
@@ -709,4 +747,66 @@ body {
 }
 .modal__close-icon:hover {
   fill: var(--color-link);
+}
+/*============= FORM =================*/
+
+.modal__content {
+  margin-bottom: 20px;
+}
+.modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 0.8695;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+}
+.form__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.form__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 0.8571;
+  letter-spacing: 0.01em;
+  color: var(--color-contacts);
+}
+.modal__button {
+  margin: 0 auto;
+}
+.form__policy {
+  margin-bottom: 30px;
+}
+.form__item input {
+  padding: 11px 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form__textarea {
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+}
+.form__textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.form__policy-label {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-contacts);
+}
+.form__policy-label a {
+  color: #2196f3;
+}
+input:focus {
+  border-color: var(--color-link);
 }

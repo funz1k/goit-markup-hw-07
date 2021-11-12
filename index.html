@@ -56,7 +56,7 @@
 			<div class="container main__header-block">
 				<h1 class="main__title">Эффективные решения для вашего бизнеса
 				</h1>
-				<button class="main__button animate" data-modal-open type="button">
+				<button class="main__button button animate" data-modal-open type="button">
 					Заказать услугу
 				</button>
 			</div>
@@ -386,12 +386,47 @@
 						</li>
 					</ul>
 				</div>
+				<div class="footer__feedback">
+					<h3 class="feedback__title block__title">Подпишитесь на рассылку</h3>
+					<div class="feedback__block">
+						<input type="email" placeholder="E-mail" class="feedback__input">
+						<button type="submit" class="feedback__button button">Подписаться</button>
+					</div>
+				</div>
 			</div>
 		</div>
 
 	</footer>
 	<div class="backdrop is-hidden" data-modal>
 		<div class="modal">
+			<h4 class="modal__title">Оставьте свои данные, мы вам перезвоним</h4>
+			<form class="modal__form">
+				<ul class="modal__content">
+					<li class="form__item">
+						<label for="name" class="form__label">Имя</label>
+						<input type="text" id="name" name="имя" class="form__input">
+					</li>
+					<li class="form__item">
+						<label for="tel" class="form__label">Телефон</label>
+						<input type="tel" id="tel" name="phone" class="form__input">
+					</li>
+					<li class="form__item">
+						<label for="mail" class="form__label">Почта</label>
+						<input type="email" id="mail" name="e-mail" class="form__input">
+					</li>
+					<li class="form__item">
+						<label for="comment" class="form__label">Комментарий</label>
+						<textarea name="Comments" id="comment" cols="30" rows="10"
+							placeholder="Введите текст" class="form__textarea"></textarea>
+					</li>
+				</ul>
+				<div class="form__policy">
+					<input type="checkbox" id="policy" name="Policy" value="policy">
+					<label for="policy" class="form__policy-label">Соглашаюсь с рассылкой и принимаю <a href="#">Условия
+							договора</a></label>
+				</div>
+				<button type="submit" class="modal__button button">Отправить</button>
+			</form>
 			<button type="button " class="modal__close" data-modal-close>
 				<svg class="modal__close-icon">
 					<use href="./img/svg/icons.svg#icon-close-icon"></use>
