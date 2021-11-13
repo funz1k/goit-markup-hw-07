@@ -404,20 +404,35 @@
 				<ul class="modal__content">
 					<li class="form__item">
 						<label for="name" class="form__label">Имя</label>
-						<input type="text" id="name" name="имя" class="form__input">
+						<div class="form__input-block">
+							<input type="text" id="name" name="имя" class="form__input">
+							<svg class="form__icon">
+								<use href="./img/svg/icons.svg#icon-form-person-icon"></use>
+							</svg>
+						</div>
 					</li>
 					<li class="form__item">
 						<label for="tel" class="form__label">Телефон</label>
-						<input type="tel" id="tel" name="phone" class="form__input">
+						<div class="form__input-block">
+							<input type="tel" id="tel" name="phone" class="form__input" autocomplete="off">
+							<svg class="form__icon">
+								<use href="./img/svg/icons.svg#icon-form-phone-icon"></use>
+							</svg>
+						</div>
 					</li>
 					<li class="form__item">
 						<label for="mail" class="form__label">Почта</label>
-						<input type="email" id="mail" name="e-mail" class="form__input">
+						<div class="form__input-block">
+							<input type="email" id="mail" name="e-mail" class="form__input">
+							<svg class="form__icon">
+								<use href="./img/svg/icons.svg#icon-form-email-icon"></use>
+							</svg>
+						</div>
 					</li>
 					<li class="form__item">
 						<label for="comment" class="form__label">Комментарий</label>
-						<textarea name="Comments" id="comment" cols="30" rows="10"
-							placeholder="Введите текст" class="form__textarea"></textarea>
+						<textarea name="Comments" id="comment" cols="30" rows="10" placeholder="Введите текст"
+							class="form__textarea"></textarea>
 					</li>
 				</ul>
 				<div class="form__policy">
