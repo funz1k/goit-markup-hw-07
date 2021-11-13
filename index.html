@@ -440,13 +440,17 @@
 							class="form__textarea"></textarea>
 					</li>
 				</ul>
-				<div class="form__policy">
-					<input type="checkbox" id="policy" name="Policy" value="policy"
-						class="visually-hidden">
-						<span class="form__checkbox"></span>
-					<label for="policy" class="form__policy-label">Соглашаюсь с рассылкой и принимаю <a href="#">Условия
-							договора</a></label>
-				</div>
+				<label class="form__policy-label">
+					<input type="checkbox" name="Policy" value="policy" class="visually-hidden form__checkbox-input">
+					<span class="form__checkbox">
+						<svg class="form__icon-checkbox">
+							<use href="./img/svg/icons.svg#icon-icon-check"></use>
+						</svg>
+					</span>
+					</span>
+					Соглашаюсь с рассылкой и принимаю
+					<a href="#">Условия договора</a>
+				</label>
 				<button type="submit" class="form__button button">Отправить</button>
 			</form>
 			<button type="button " class="modal__close" data-modal-close>
