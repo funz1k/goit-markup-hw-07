@@ -17,6 +17,7 @@
 	<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="./css/service.css">
 
 </head>
 
@@ -390,7 +391,11 @@
 					<h3 class="feedback__title block__title">Подпишитесь на рассылку</h3>
 					<div class="feedback__block">
 						<input type="email" placeholder="E-mail" class="feedback__input">
-						<button type="submit" class="feedback__button button">Подписаться</button>
+						<button type="submit" class="feedback__button button">Подписаться
+							<svg class="feedback__icon">
+								<use href="./img/svg/icons.svg#icon-icon-send"></use>
+							</svg>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -401,7 +406,7 @@
 		<div class="modal">
 			<h4 class="modal__title">Оставьте свои данные, мы вам перезвоним</h4>
 			<form class="modal__form">
-				<ul class="modal__content">
+				<ul class="form__content">
 					<li class="form__item">
 						<label for="name" class="form__label">Имя</label>
 						<div class="form__input-block">
@@ -436,11 +441,13 @@
 					</li>
 				</ul>
 				<div class="form__policy">
-					<input type="checkbox" id="policy" name="Policy" value="policy">
+					<input type="checkbox" id="policy" name="Policy" value="policy"
+						class="visually-hidden">
+						<span class="form__checkbox"></span>
 					<label for="policy" class="form__policy-label">Соглашаюсь с рассылкой и принимаю <a href="#">Условия
 							договора</a></label>
 				</div>
-				<button type="submit" class="modal__button button">Отправить</button>
+				<button type="submit" class="form__button button">Отправить</button>
 			</form>
 			<button type="button " class="modal__close" data-modal-close>
 				<svg class="modal__close-icon">
