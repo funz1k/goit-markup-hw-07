@@ -869,13 +869,14 @@ body {
   fill: var(--color-white);
   transition: fill 250ms var(--timing-function), opacity 250ms var(--timing-function);
 }
+
 .policy__input:checked + .policy__icon {
   opacity: 1;
   fill: var(--color-link);
 }
 .policy__text {
   display: inline-block;
-  margin-left: 7px;
+  margin-left: 24px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
