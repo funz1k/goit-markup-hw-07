@@ -781,7 +781,7 @@ body {
 .form__policy {
   margin-bottom: 30px;
 }
-.form__item input {
+.form__input {
   padding: 11px 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -805,8 +805,10 @@ body {
   color: var(--color-contacts);
 }
 .form__policy-label a {
-  color: #2196f3;
+  color: var(--color-link);
 }
-input:focus {
-  border-color: var(--color-link);
+.form__input:focus-visible,
+.form__textarea:focus-visible {
+  outline: none;
+  border: 1px solid var(--color-link);
 }
