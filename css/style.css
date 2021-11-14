@@ -362,6 +362,7 @@ body {
   align-items: center;
 }
 .direction__text {
+  font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-white);
@@ -569,6 +570,7 @@ body {
   border-radius: 4px;
   padding: 15px;
   transition: 250ms border var(--timing-function);
+  color: var(--color-white);
 }
 .feedback__input::placeholder {
   font-size: 16px;
@@ -726,7 +728,7 @@ body {
   visibility: hidden;
 }
 .backdrop.is-hidden .modal {
-  transform: scale(1.1) translate(-50%, -50%);
+  transform: scale(0.8) translate(-50%, -50%);
 }
 
 .modal {
@@ -736,7 +738,7 @@ body {
   top: 50%;
   left: 50%;
   background-color: #ffffff;
-  transform: translate(-50%, -50%) scale(0.8);
+  transform: translate(-50%, -50%) scale(1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms var(--timing-function), visibility 250ms var(--timing-function);
@@ -752,6 +754,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  background: transparent;
 }
 
 .modal__close-icon {
@@ -829,6 +832,7 @@ body {
   resize: none;
   cursor: pointer;
   transition: 250ms border var(--timing-function);
+  min-height: 120px;
 }
 .form__textarea::placeholder {
   font-size: 12px;
@@ -882,7 +886,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-contacts);
 }
-
+.policy__link {
+  color: var(--color-link);
+}
 /*=========================================*/
 .form__policy-label a {
   color: var(--color-link);
