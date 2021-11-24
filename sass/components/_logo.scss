@@ -1,0 +1,11 @@
+.logo {
+    color: $color-href;
+    font-family: "Raleway", Times, serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.19;
+    &--blue {
+        color: $color-link;
+    }
+}

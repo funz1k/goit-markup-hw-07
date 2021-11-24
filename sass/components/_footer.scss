@@ -1,0 +1,124 @@
+.footer {
+    padding: 60px 0;
+    background-color: $color-main;
+    width: 100%;
+}
+
+.footer__main {
+    display: flex;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.03em;
+}
+
+.footer__logo {
+    display: block;
+    margin-bottom: 20px;
+    max-width: 146px;
+    color: $color-white;
+}
+
+.footer__address {
+    line-height: 1.71;
+    margin-bottom: 9px;
+    color: $color-white;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+
+.footer__mail {
+    display: inline-block;
+    line-height: 1.71;
+    color: $color-footer-contacts;
+    margin: 0 0 9px 0;
+    text-decoration: none;
+    @include transition(color);
+
+    &:hover {
+        color: $color-link;
+    }
+
+    &:focus {
+        color: $color-link;
+    }
+}
+
+.footer__tel {
+    line-height: 1.71;
+    color: $color-footer-contacts;
+    text-decoration: none;
+    @include transition(color);
+
+    &:hover {
+        color: $color-link;
+    }
+
+    &:focus {
+        color: $color-link;
+    }
+}
+
+.footer__social {
+    margin-left: 70px;
+}
+
+.footer__link {
+    background-color: $color-icons-footer;
+}
+
+.footer__feedback {
+    margin-left: auto;
+}
+
+.feedback__title {
+    color: $color-white;
+    margin-bottom: 20px;
+}
+
+.feedback__block {
+    display: flex;
+}
+
+.feedback__input {
+    min-width: 358px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 15px;
+    @include transition(border);
+    color: $color-white;
+    &::placeholder {
+        font-size: 16px;
+        line-height: 0.8;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    &:focus-visible {
+        border: 1px solid $color-link;
+    }
+}
+
+.feedback__button {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    padding-left: 29px;
+    @include transition(background);
+    &:hover {
+        background: #188ce8;
+    }
+    &:focus {
+        background: #188ce8;
+    }
+}
+
+.feedback__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}

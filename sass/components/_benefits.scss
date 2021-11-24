@@ -1,0 +1,42 @@
+.main__benefits {
+    padding-top: 94px;
+}
+
+.benefits__list {
+    display: flex;
+    color: $color-href;
+}
+
+.benefits__item {
+    flex: 1 1 25%;
+    &:not(:last-child) {
+        margin: 0px 30px 0px 0px;
+    }
+}
+
+.benefits__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: $color-main-team;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.benefits__icon {
+    width: 70px;
+    height: 70px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.benefits__title {
+    margin: 0 0 10px 0;
+}
+
+.benefits__subtitle {
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: $color-contacts;
+}

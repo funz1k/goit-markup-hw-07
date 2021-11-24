@@ -13,35 +13,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
 
     <!-- ======== Подключаем CSS ==================-->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 
 </head>
 
 <body>
-    <!--===================== HEADER====================-->
-    <header class="header header__portfolio">
+    <!--============ HEADER =============================-->
+    <header class="header">
         <div class="header__main container">
-            <a href="/" class="header__logo logo"><span>Web</span>Studio</a>
+            <a href="/" class="header__logo logo"><span class="logo--blue">Web</span>Studio</a>
 
-            <!--========== MAIN__NAV ==================-->
-            <nav class="main__nav">
-                <ul class="main__menu">
-                    <li class="main__item"><a href="./index.html" class="main__link">Студия</a></li>
-                    <li class="main__item"><a href="./portfolio.html" class="main__link link-active">Портфолио</a>
+            <!--========== NAVIGATION__MAIN ==================-->
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="./index.html" class="navigation__link">Студия</a>
                     </li>
-                    <li class="main__item"><a href="#" class="main__link">Контакты</a></li>
+                    <li class="navigation__item"><a href="./portfolio.html"
+                            class="navigation__link navigation__link--active">Портфолио</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
                 </ul>
             </nav>
 
             <!--===== HEADER__CONTACTS ===================-->
             <div class="header__contacts">
-                <a href="mailto:info@devstudio.com" class="contacts-mail"><svg class="mail__icon">
+                <a href="mailto:info@devstudio.com" class="header__mail"><svg class="header__icon--mail">
                         <use href="./img/svg/icons.svg#icon-header-mail"></use>
                     </svg>
                     info@devstudio.com</a>
-                <a href="tel:+380961111111" class="cotacts-tel"><svg class="tel__icon">
+                <a href="tel:+380961111111" class="header__tel"><svg class="header__icon--tel">
                         <use href="./img/svg/icons.svg#icon-header-phone"></use>
                     </svg>
                     +38 096 111 11 11</a>
@@ -50,107 +49,117 @@
     </header>
 
     <!--================ MAIN ========================-->
-    <main class="main__portfolio">
+    <main class="portfolio__main">
         <div class="container">
-            <section class="main__filter section">
+            <section class="portfolio__filter section">
                 <!--============== FILTER ===============-->
                 <ul class="filter__list">
-                    <li><button type="button" class="filter__button active">Все</button></li>
-                    <li><button type="button" class="filter__button">Веб-сайты</button></li>
-                    <li><button type="button" class="filter__button">Приложения</button></li>
-                    <li><button type="button" class="filter__button">Дизайн</button></li>
-                    <li><button type="button" class="filter__button">Маркетинг</button></li>
+                    <li class="filter__item">
+                        <button type="button" class="filter__button">Все</button>
+                    </li>
+                    <li class="filter__item">
+                        <button type="button" class="filter__button">Веб-сайты</button>
+                    </li>
+                    <li class="filter__item">
+                        <button type="button" class="filter__button">Приложения</button>
+                    </li>
+                    <li class="filter__item">
+                        <button type="button" class="filter__button">Дизайн</button>
+                    </li>
+                    <li class="filter__item">
+                        <button type="button" class="filter__button">Маркетинг</button>
+                    </li>
                 </ul>
                 <!--============ PROJECTS =================-->
-                <div class="main__projects">
+                <div class="portfolio__projects">
                     <ul class="projects__list">
                         <li class="projects__item">
-                            <a href="#" class="project__link">
-                                <div class="project__thumb">
+                            <a href="#" class="projects__link">
+                                <div class="projects__thumb">
                                     <img src="./img/portfolio/portfolio_1.jpg" alt="Технокряк" width="370" height="294">
-                                    <div class="project__overlay">
-                                        <p class="project__text">
+                                    <div class="projects__overlay">
+                                        <p class="projects__text">
                                             Технокряк это современная площадка распространения коронавируса. Компании
                                             используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                                             конкурентов.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="project__block">
-                                    <h3 class="project__title">Технокряк</h3>
-                                    <p class="project__subtitle">Веб-сайт</p>
+                                <div class="projects__block">
+                                    <h3 class="projects__title">Технокряк</h3>
+                                    <p class="projects__subtitle">Веб-сайт</p>
                             </a>
                         </li>
                         <li class="projects__item">
-                            <a href="#" class="project__link">
+                            <a href="#" class="projects__link">
                                 <img src="./img/portfolio/portfolio_2.jpg" alt="Постер New Orlean vs Golden Star"
                                     width="370">
-                                <div class="project__block">
-                                    <h3 class="project__title">Постер New Orlean vs Golden Star</h3>
-                                    <p class="project__subtitle">Дизайн</p>
+                                <div class="projects__block">
+                                    <h3 class="projects__title">Постер New Orlean vs Golden Star</h3>
+                                    <p class="projects__subtitle">Дизайн</p>
                                 </div>
                             </a>
                         </li>
                         <li class="projects__item">
-                            <a href="#" class="project__link">
+                            <a href="#" class="projects__link">
                                 <img src="./img/portfolio/portfolio_3.jpg" alt="Ресторан Seafood" width="370">
-                                <div class="project__block">
-                                    <h3 class="project__title">Ресторан Seafood</h3>
-                                    <p class="project__subtitle">Приложение</p>
+                                <div class="projects__block">
+                                    <h3 class="projects__title">Ресторан Seafood</h3>
+                                    <p class="projects__subtitle">Приложение</p>
                                 </div>
                             </a>
                         </li>
                         <li class="projects__item">
-                            <a href="#" class="project__link">
+                            <a href="#" class="projects__link">
                                 <img src="./img/portfolio/portfolio_4.jpg" alt="Проект Prime" width="370">
-                                <div class="project__block">
-                                    <h3 class="project__title">Проект Prime</h3>
-                                    <p class="project__subtitle">Маркетинг</p>
+                                <div class="projects__block">
+                                    <h3 class="projects__title">Проект Prime</h3>
+                                    <p class="projects__subtitle">Маркетинг</p>
                                 </div>
                             </a>
                         </li>
                         <li class="projects__item">
-                            <a href="#" class="project__link">
+                            <a href="#" class="projects__link">
                                 <img src="./img/portfolio/portfolio_5.jpg" alt="Проект Boxes" width="370">
-                                <div class="project__block">
-                                    <h3 class="project__title">Проект Boxes</h3>
-                                    <p class="project__subtitle">Приложение</p>
+                                <div class="projects__block">
+                                    <h3 class="projects__title">Проект Boxes</h3>
+                                    <p class="projects__subtitle">Приложение</p>
                                 </div>
                             </a>
                         </li>
                         <li class="projects__item">
-                            <a href="#" class="project__link">
+                            <a href="#" class="projects__link">
                                 <img src="./img/portfolio/portfolio_6.jpg" alt="Веб-сайт" width="370">
-                                <div class="project__block">
-                                    <h3 class="project__title">Inspiration has no Borders</h3>
-                                    <p class="project__subtitle">Веб-сайт</p>
+                                <div class="projects__block">
+                                    <h3 class="projects__title">Inspiration has no Borders</h3>
+                                    <p class="projects__subtitle">Веб-сайт</p>
                                 </div>
                             </a>
                         </li>
                         <li class="projects__item">
-                            <a href="#" class="project__link">
+                            <a href="#" class="projects__link">
                                 <img src="./img/portfolio/portfolio_7.jpg" alt="Издание Limited Edition" width="370">
-                                <div class="project__block">
-                                    <h3 class="project__title">Издание Limited Edition</h3>
-                                    <p class="project__subtitle">Дизайн</p>
+                                <div class="projects__block">
+                                    <h3 class="projects__title">Издание Limited Edition</h3>
+                                    <p class="projects__subtitle">Дизайн</p>
                                 </div>
                             </a>
                         </li>
                         <li class="projects__item">
-                            <a href="#" class="project__link">
+                            <a href="#" class="projects__link">
                                 <img src="./img/portfolio/portfolio_8.jpg" alt="Проект LAB" width="370">
-                                <div class="project__block">
-                                    <h3 class="project__title">Проект LAB</h3>
-                                    <p class="project__subtitle">Маркетинг</p>
+                                <div class="projects__block">
+                                    <h3 class="projects__title">Проект LAB</h3>
+                                    <p class="projects__subtitle">Маркетинг</p>
                                 </div>
                             </a>
                         </li>
                         <li class="projects__item">
-                            <a href="#" class="project__link">
+                            <a href="#" class="projects__link">
                                 <img src="./img/portfolio/portfolio_9.jpg" alt="Приложение" width="370">
-                                <div class="project__block">
-                                    <h3 class="project__title">Growing Business</h3>
-                                    <p class="project__subtitle">Приложение</p>
+                                <div class="projects__block">
+                                    <h3 class="projects__title">Growing Business</h3>
+                                    <p class="projects__subtitle">Приложение</p>
                                 </div>
                             </a>
                         </li>
@@ -159,13 +168,13 @@
             </section>
         </div>
     </main>
-    <!--================ FOOTER ====================-->
+    <!--=========== FOOTER ============================-->
     <footer class="footer">
         <div class="container ">
             <div class="footer__main">
                 <!--========= FOOTER__CONTACTS ===========-->
                 <div class="footer__contacts">
-                    <a class="footer__logo logo" href="#" target="blank"><span>Web</span>Studio</a>
+                    <a class="footer__logo logo" href="#" target="blank"><span class="logo--blue">Web</span>Studio</a>
                     <address class="footer__address">г. Киев, пр-т Леси Украинки, 26
                     </address>
                     <a href="mailto:info@devstudio.com" class="footer__mail">info@devstudio.com</a>
@@ -174,30 +183,30 @@
                 <div class="footer__social">
                     <h3 class="social__title block__title"> присоединяйтесь</h3>
                     <ul class="social__block">
-                        <li>
+                        <li class="social__item">
                             <a href="#" target="blank" class="social__link footer__link">
-                                <svg class="social__icon social__icon-white">
+                                <svg class="social__icon social__icon--white">
                                     <use href="./img/svg/icons.svg#icon-logo-instagram"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li>
+                        <li class="social__item">
                             <a href="#" target="blank" class="social__link footer__link">
-                                <svg class="social__icon social__icon-white">
+                                <svg class="social__icon social__icon--white">
                                     <use href="./img/svg/icons.svg#icon-logo-twitter"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li>
+                        <li class="social__item">
                             <a href="#" target="blank" class="social__link footer__link">
-                                <svg class="social__icon social__icon-white">
+                                <svg class="social__icon social__icon--white">
                                     <use href="./img/svg/icons.svg#icon-logo-facebook"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li>
+                        <li class="social__item">
                             <a href="#" target="blank" class="social__link footer__link">
-                                <svg class="social__icon social__icon-white">
+                                <svg class="social__icon social__icon--white">
                                     <use href="./img/svg/icons.svg#icon-logo-linkedin"></use>
                                 </svg>
                             </a>
@@ -217,6 +226,9 @@
                 </div>
             </div>
         </div>
+
     </footer>
 </body>
+
+
 </html>
